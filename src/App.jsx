@@ -13,7 +13,6 @@ const [photo, setPhoto] = useState(1)
   useEffect(() => {
 
     const music = document.getElementById("music");
-    music.play();
 
     changePhoto = setInterval(() =>{
 
@@ -30,7 +29,7 @@ const [photo, setPhoto] = useState(1)
   })
 
   return (
-    <div className="App">
+    <div className="App" onClick={() => music.play()}>
       <div className="container">
         <h1>Feliz 4to Aniversario Queen</h1>
         <div className="marco">
